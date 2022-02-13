@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { apiAccessKey } from '../../environments/environment'
 
 
 @Injectable({
@@ -12,7 +13,10 @@ export class GitSearchServiceService {
      * locateProfile
      */
     public locateProfile(searchQuery: String) {
-      let profileLink = `https://api.github.com/users/${searchQuery}`
+      let profileLink = `https://api.github.com/users/${searchQuery}?client_id=${apiAccessKey}`
+      return this.httpClient.get(profileLink).pipe(
+        
+      )
     }
 
 }
