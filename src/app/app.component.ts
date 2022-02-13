@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   public searchQuery!: String;
 
+  /**
+   * searchUser
+   */
+  public searchUser() {
+    //https://api.github.com/users/Lyonsmasawa
+    //https://api.github.com/users/Lyonsmasawa/repos
+  }
     constructor() {
-      
+
     }
   ngOnInit(): void{}
 }
