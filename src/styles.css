@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa {
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  padding: .8rem 1rem;
+  margin-right: 2rem;
+}
+
+.fa:hover {
+  background: black;
+  color: red;
+}
