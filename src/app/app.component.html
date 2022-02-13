@@ -1,3 +1,8 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <div class="container">
   <div class="row">
     <div class="col">
@@ -8,7 +13,7 @@
         <div class="card">
           <form (submit)="searchUser()">
             <div class="form-group">
-              <input type="search" name="user" [(ngModel)]= "searchQuery" id="" placeholder="Enter Username">
+              <input type="search" name="user" [(ngModel)]="searchQuery" id="" placeholder="Enter Username">
             </div>
             <div>
               <input type="submit" value="Search User" class="btn btn-secondary">
@@ -18,4 +23,10 @@
       </div>
     </div>
   </div>
+</div>
+<br>
+<div class="social">
+  <a href="https://github.com/Lyonsmasawa" target="_blank" class="fa fa-github"></a>
+  <a href="https://twitter.com/LyonsXzone" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.linkedin.com/in/lyonsalbert/" target="_blank" class="fa fa-linkedin"></a>
 </div>
