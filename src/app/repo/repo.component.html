@@ -6,7 +6,7 @@
     <div *ngIf="userRepository">
       <ul class="seven">
         <li *ngFor="let repos of userRepository" class="card eight">
-          <h1><a [href]="repos.html_url" class="txt" target="_blank"><strong> {{ repos.name }} </strong></a></h1>
+          <h1><a [href]="repos.html_url" class="txt" target="_blank"><strong> {{ repos.name | capitalize }} </strong></a></h1>
           <p class="description" appHighlight><strong>Description :</strong> {{ repos.description }} </p>
           <p><strong>Date created : </strong>{{ repos.created_at | date }}</p>
           <p class="description" ><strong> Clone Repository : </strong><a [href]="repos.clone_url" class="txt" target="_blank"><em> Click to clone Repository </em></a></p>
