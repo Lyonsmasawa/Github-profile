@@ -8,6 +8,7 @@ import { UserComponent } from './user/user.component';
 import { RepoComponent } from './repo/repo.component';
 import { UserDataComponent } from './data/user-data/user-data.component';
 import { UserProfComponent } from './data/user-prof/user-prof.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { UserProfComponent } from './data/user-prof/user-prof.component';
     RepoComponent,
     UserDataComponent,
     UserProfComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
