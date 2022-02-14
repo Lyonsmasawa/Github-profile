@@ -191,6 +191,9 @@ h1 a:hover{
   padding: 2%;
   font-size: 1.7rem;
 }
+.about{
+  padding: 0.2% 1%;
+}
 .eight .description a{
   text-decoration: none;
   font-size: 1.2rem;
