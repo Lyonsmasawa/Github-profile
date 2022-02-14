@@ -16,6 +16,15 @@ export class AppComponent implements OnInit{
   constructor(private searchService: SearchService) { //link to service
 
   }
+  ngOnInit(): void{
+    this.searchService.getUserData("Lyonsmasawa").subscribe((data) => {
+      this.userProfile = data
+    });
+
+    this.searchService.getRepoData("Lyonsmasawa").subscribe((data) => {
+      this.userRepository = data
+    });
+  }
 
   //fetch data
   public queryUser(){
@@ -36,8 +45,4 @@ export class AppComponent implements OnInit{
     });
   }
 
-
-  ngOnInit(): void{
-
-  }
 }

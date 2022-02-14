@@ -1,28 +1,32 @@
-<div class="card">
-  <div class="card-header">
-    <span class="badge-success"> {{ userProfile.followers }} followers </span>
-    <span class="badge-success"> {{ userProfile.following }} following </span>
-    <span class="badge-success"> {{ userProfile.public_repos }} Repos </span>
+<div class="container">
+  <div class="stats">
+    <span class="highLight"> {{ userProfile.public_repos }} Repos </span>
+    <span class="highLight"> {{ userProfile.followers }} followers </span>
+    <span class="highLight"> {{ userProfile.following }} following </span>
   </div>
-  <div class="card-body">
-    <ul class="list-group">
-      <li class="list-group-item">
-        Username: {{ userProfile.name }}
+  <div class="cardx">
+    <br>
+    <ul class="list-group four">
+      <div class="dets">
+        <h3>Brief Information</h3>
+      </div>
+      <li class="list-group-item five">
+        <strong>Username:</strong> {{ userProfile.name }}
       </li>
-      <li class="list-group-item">
-        Twitter handle: {{ userProfile.twitter_username }}
+      <li class="list-group-item five">
+        <strong>Twitter handle: </strong>{{ userProfile.twitter_username }}
       </li>
-      <li class="list-group-item">
-        Website : <a [href]="userProfile.blog" target="_blank" >{{ userProfile.blog }}</a>
+      <li class="list-group-item five">
+        <strong>Website : </strong><a [href]="userProfile.blog" target="_blank">{{ userProfile.blog }}</a>
       </li>
-      <li class="list-group-item">
-        User Email: {{ userProfile.email }}
+      <li class="list-group-item five">
+        <strong>User Email: </strong>{{ userProfile.email }}
       </li>
-      <li class="list-group-item">
-        Location: {{ userProfile.location }}
+      <li class="list-group-item five">
+        <strong>Location: </strong>{{ userProfile.location }}
       </li>
-      <li class="list-group-item">
-        Joined : {{ userProfile.created_at | date }}
+      <li class="list-group-item five">
+        <strong>Joined : </strong>{{ userProfile.created_at | date }}
       </li>
     </ul>
   </div>
