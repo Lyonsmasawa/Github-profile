@@ -156,6 +156,7 @@ body {
   justify-content: center;
 }
 .dets{
+  box-shadow: 0px 0px 3px white;
   text-align: center;
   text-decoration: underline;
   background-color: black;
