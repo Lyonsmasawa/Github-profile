@@ -1,4 +1,4 @@
-# QuotesApp
+# Github Profile Search
 
 ## A peek of the page
 <img src="peek.png">
@@ -9,7 +9,7 @@ This is an Angular cli application, It allows the user to input new quote for ot
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
 ## Live Page 
-click here to view the site [https://lyonsmasawa.github.io/Qoutes-App/]
+click here to view the site [https://lyonsmasawa.github.io/Github-profile/]
 
 ## Development server
 
@@ -38,7 +38,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Installation / Setup instruction
 
-* git clone from this link (https://github.com/Lyonsmasawa/Goals.git)
+* git clone from this link (https://github.com/Lyonsmasawa/Github-profile.git)
 
 * Edit to your satisfaction
 
