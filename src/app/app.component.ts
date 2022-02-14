@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
 
   //fetch data
   public queryUser(){
-    if(this.userSearch === ''){
+    if(this.userSearch === '' || this.userSearch === undefined){
       alert("username is required")
       return;
     }
