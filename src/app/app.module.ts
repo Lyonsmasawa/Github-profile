@@ -10,6 +10,7 @@ import { UserDataComponent } from './data/user-data/user-data.component';
 import { UserProfComponent } from './data/user-prof/user-prof.component';
 import { HighlightDirective } from './highlight.directive';
 import { CapitalizePipe } from './capitalize.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CapitalizePipe } from './capitalize.pipe';
     UserProfComponent,
     HighlightDirective,
     CapitalizePipe,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
