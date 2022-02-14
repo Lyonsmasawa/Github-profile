@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { warn } from 'console';
 import { SearchService } from './search.service';
 @Component({
   selector: 'app-root',
