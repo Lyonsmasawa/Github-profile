@@ -21,8 +21,8 @@ export class SearchService {
 
   //repo search
   public getRepoData(userSearch: string):Observable<any[]>{//repos get arrays
-    let dataUrl = `https://api.github.com/users/${userSearch}/repos?token=${apiKey}`;
-    return this.httpClient.get<any[]>(dataUrl).pipe(
+    let repoUrl = `https://api.github.com/users/${userSearch}/repos?token=${apiKey}`;
+    return this.httpClient.get<any[]>(repoUrl).pipe(
       retry(2),
       catchError(this.errorHandling)
     );
