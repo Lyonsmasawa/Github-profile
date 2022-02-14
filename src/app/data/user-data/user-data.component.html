@@ -1,1 +1,30 @@
-<p>user-data works!</p>
+<div class="card">
+  <div class="card-header">
+    <span class="badge-success"> {{ userProfile.followers }} followers </span>
+    <span class="badge-success"> {{ userProfile.following }} following </span>
+    <span class="badge-success"> {{ userProfile.public_repos }} Repos </span>
+  </div>
+  <div class="card-body">
+    <ul class="list-group">
+      <li class="list-group-item">
+        Username: {{ userProfile.name }}
+      </li>
+      <li class="list-group-item">
+        Twitter handle: {{ userProfile.twitter_username }}
+      </li>
+      <li class="list-group-item">
+        Website : <a [href]="userProfile.blog" target="_blank" >{{ userProfile.blog }}</a>
+      </li>
+      <li class="list-group-item">
+        User Email: {{ userProfile.email }}
+      </li>
+      <li class="list-group-item">
+        Location: {{ userProfile.location }}
+      </li>
+      <li class="list-group-item">
+        Joined : {{ userProfile.created_at | date }}
+      </li>
+    </ul>
+  </div>
+
+</div>
