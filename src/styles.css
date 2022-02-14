@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, rgba(13, 2, 44, 0.3), rgba(0, 0, 0, 0.405)), url("bg2.jpg");
+  background: linear-gradient(135deg, rgba(13, 2, 44, 0.5), rgba(0, 0, 0, 0.505)), url("bg2.jpg");
   color: white;
   padding: 1%;
   display: flex;
@@ -114,6 +114,18 @@ body {
   width: 100%;
   gap: 4%;
 }
+.six {
+  color: black;
+  background-color: transparent;
+  padding: 2%;
+}
+.titlex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  font-weight: 900;
+}
 .four{
   background-color: transparent;
   border-radius: 2px;
@@ -138,6 +150,11 @@ body {
   color: red;
   font-size: 1.2rem;
 }
+.seven{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .dets{
   text-align: center;
   text-decoration: underline;
@@ -148,7 +165,45 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.eight{
+  background-color: transparent;
+  color: white;
+  box-shadow: 0px 0px 2px white;
+  margin-bottom: 4%;
+  padding: 2%;
+}
+.eight strong{
+  text-decoration: none;
+  font-weight: 900;
+  color: red;
+}
+.description{
+  font-size: 1.15rem;
+}
+.eight h1 a{
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+h1 a:hover{
+  text-decoration: none;
+  font-style: italic;
+  padding: 2%;
+  font-size: 1.7rem;
+}
+.eight .description a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration-color: black;
+  background-color: rgba(255, 0, 0, 0.21);
+  padding: 1%;
+}
+.description a:hover{
+  text-decoration: none;
+  font-style: italic;
+  padding: 2%;
+  font-size: 1.5rem;
+}
 .fa {
   background: white;
   color: black;
