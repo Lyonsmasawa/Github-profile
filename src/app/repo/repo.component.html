@@ -10,6 +10,7 @@
           <p class="description"><strong>Description :</strong> {{ repos.description }} </p>
           <p><strong>Date created : </strong>{{ repos.created_at | date }}</p>
           <p class="description"><strong> Clone Repository : </strong><a [href]="repos.clone_url" class="txt" target="_blank"><em> Click to clone Repository </em></a></p>
+          <p><strong>Language: </strong>{{ repos.language }}</p>
         </li>
       </ul>
     </div>
