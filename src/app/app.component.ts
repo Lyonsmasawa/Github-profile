@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
 
   public userSearch!: string
+  
+  constructor() {
+
+  }
+
+  public queryUser(){
+
+  }
 
   ngOnInit(): void{
 

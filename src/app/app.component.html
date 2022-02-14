@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <br>
   <div class="container card">
     <h1>GitHub Search</h1>
     <div class="card">
-      <form>
+      <br>
+      <form (submit)="queryUser()">
         <div class="form-group">
           <input type="search" name="form-control" id="" placeholder="Enter username here..." [(ngModel)]="userSearch">
         </div>
