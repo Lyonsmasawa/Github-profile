@@ -9,6 +9,7 @@ import { RepoComponent } from './repo/repo.component';
 import { UserDataComponent } from './data/user-data/user-data.component';
 import { UserProfComponent } from './data/user-prof/user-prof.component';
 import { HighlightDirective } from './highlight.directive';
+import { CapitalizePipe } from './capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HighlightDirective } from './highlight.directive';
     UserDataComponent,
     UserProfComponent,
     HighlightDirective,
+    CapitalizePipe,
   ],
   imports: [
     BrowserModule,
