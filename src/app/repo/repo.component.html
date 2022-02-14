@@ -1,15 +1,15 @@
 <br>
-<div class="card">
+<div *ngIf="userRepository" class="card">
   <div class="card-header">
     <h1>Repositories</h1>
   </div>
   <div class="card-body">
     <ul class="list-group">
-      <li  *ngFor="let repos of userRepository" class="list-group-item">
+      <li *ngFor="let repos of userRepository" class="list-group-item">
         <h3>
-          <a href="/" class="text-primary" target="_blank"> q </a>
-          <span class="badge-success"> Description </span>
-          <span class="badge-success">forks</span>
+          <a [href]="repos.html_url" class="text-primary" target="_blank"> {{ repos.name }} </a>
+          <span class="badge-success"> Description : {{ repos.description }} </span>
+          <span class="badge-success">forks: {{ repos.forks }}</span>
         </h3>
       </li>
     </ul>
