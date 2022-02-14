@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, rgba(13, 2, 44, 0.5), rgba(0, 0, 0, 0.505)), url("bg2.jpg");
+  background: linear-gradient(135deg, rgba(11, 3, 34, 0.5), rgba(0, 0, 0, 0.505)), url("bg2.jpg");
   color: white;
   padding: 1%;
   display: flex;
