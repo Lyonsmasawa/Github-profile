@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { warn } from 'console';
 import { SearchService } from './search.service';
 @Component({
   selector: 'app-root',
@@ -19,6 +20,10 @@ export class AppComponent implements OnInit{
 
   //fetch data
   public queryUser(){
+    if(this.userSearch === ''){
+      alert("username is required")
+      return;
+    }
     this.searchService.getUserData(this.userSearch).subscribe((data) => {
       this.userProfile = data
     } , (error) => {
