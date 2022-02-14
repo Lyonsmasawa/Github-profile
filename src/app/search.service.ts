@@ -1,7 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, Observable, retry, throwError } from 'rxjs';
-import { apiKey, environment } from 'src/environments/environment';
+import { apiKey } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
